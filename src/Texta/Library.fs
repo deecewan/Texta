@@ -29,7 +29,7 @@ type Style =
 
 let format fg message =
     let color = int fg
-    Printf.sprintf("\\e[0;%dm%s\\e[0m") color message
+    Printf.sprintf("\u001b[0;%dm%s\u001b[0m") color message
 
 let black = format Foreground.Black
 let red = format Foreground.Red
