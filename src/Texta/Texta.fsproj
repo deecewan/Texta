@@ -3,6 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="SupportsColor.fs" />
     <Compile Include="Library.fs" />
   </ItemGroup>
 </Project>

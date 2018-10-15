@@ -27,15 +27,15 @@ type Style =
     | Bold = 1
     | Underline = 4
 
-let format fg message =
+let format (fg:Foreground) message =
     let color = int fg
-    Printf.sprintf("\u001b[0;%dm%s\u001b[0m") color message
+    Printf.ksprintf(fun res -> sprintf "\u001b[0;%dm%s\u001b[0m" color res) message
 
-let black = format Foreground.Black
-let red = format Foreground.Red
-let green = format Foreground.Green
-let yellow = format Foreground.Yellow
-let blue = format Foreground.Blue
-let magenta = format Foreground.Magenta
-let cyan = format Foreground.Cyan
-let white = format Foreground.White
+let black message = format Foreground.Black message
+let red message = format Foreground.Red message
+let green message = format Foreground.Green message
+let yellow message = format Foreground.Yellow message
+let blue message = format Foreground.Blue message
+let magenta message = format Foreground.Magenta message
+let cyan message = format Foreground.Cyan message
+let white message = format Foreground.White message
