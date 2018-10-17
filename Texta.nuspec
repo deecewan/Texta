@@ -5,7 +5,7 @@
         <id>Texta</id>
 
         <!-- The package version number that is used when resolving dependencies -->
-        <version>1.0.0-alpha.2</version>
+        <version>1.0.0-alpha.3</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
         <authors>David Buchan-Swanson</authors>
@@ -42,7 +42,7 @@
         <tags>color colorize colorise fsharp console log print pretty</tags>
 
         <dependencies>
-            <dependency id="FSharp.Core" version="4.5.2" />
+            <dependency id="FSharp.Core" version="4.3.4" />
             <dependency id="NETStandard.Library" version="2.0.3" />
         </dependencies>
     </metadata>

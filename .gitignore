@@ -17,3 +17,4 @@ bin
 # End of https://www.gitignore.io/api/fsharp
 Texta.1.0.0-alpha.nupkg
 .DS_Store
+Texta.1.0.0-alpha.2.nupkg
